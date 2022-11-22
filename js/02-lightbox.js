@@ -17,4 +17,8 @@ function createGalleryMarkup(galleryItems) {
     .join('');
 }
 
-new SimpleLightbox('.gallery a');
+new SimpleLightbox('.gallery a', {
+  captionPosition: "bottom",
+  captionsData: "alt",
+  captionDelay: 250,
+});
